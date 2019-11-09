@@ -1,7 +1,5 @@
-package observer1;
-
+package observer;
 
 public interface Observer {
     void update(String news);
-//    void update();
 }
