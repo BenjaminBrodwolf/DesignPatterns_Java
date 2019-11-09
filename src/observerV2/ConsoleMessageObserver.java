@@ -1,6 +1,6 @@
-package observer;
+package observerV2;
 
-public class ConsoleMessageObserver implements Observer {
+public class ConsoleMessageObserver implements Observer<String> {
 
     @Override
     public void update(String value) {

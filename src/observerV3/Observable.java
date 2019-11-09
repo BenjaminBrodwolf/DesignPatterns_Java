@@ -1,11 +1,12 @@
-package observer;
+package observerV3;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public abstract class Observable {
 
-    private List<Observer> observers = new ArrayList<>();
+    private List<Observer> observers = new CopyOnWriteArrayList<>();
 
     public void addSubscriber(Observer subscriber) {
         observers.add(subscriber);
@@ -15,9 +16,9 @@ public abstract class Observable {
         observers.remove(subscriber);
     }
 
-    public void notifyListeners(String value) {
+    public void notifyListeners() {
         for (Observer s: observers) {
-            s.update(value);
+            s.update(this);
         }
     }
 }

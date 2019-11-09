@@ -1,4 +1,4 @@
-package observer;
+package observerV2;
 
 public class Newsletter extends Observable {
 

@@ -1,4 +1,4 @@
-package observer;
+package observerV3;
 
 public class NewsletterMain {
 
@@ -7,6 +7,13 @@ public class NewsletterMain {
         Newsletter newsletter = new Newsletter();
 
         newsletter.addSubscriber(new ConsoleMessageObserver());
+
+
+        newsletter.addSubscriber( source -> {
+            System.out.println("HALLO");
+            System.out.println("ich bin source: " + source);
+            source.addSubscriber(s -> System.out.println("inner SOURCE" + s));
+        });
 
         Subscriber s1 = new Subscriber("Sub1");
         Subscriber s2 = new Subscriber("Sub2");
