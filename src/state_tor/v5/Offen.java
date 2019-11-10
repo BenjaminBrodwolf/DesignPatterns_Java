@@ -10,6 +10,6 @@ public class Offen extends AbstrakterZustand {
     @Override
     public Zustand schliessen() {
         System.out.println("Tor wird geschlossen");
-        return TorZustande.GESCHLOSSEN_ZUSTAND;
+        return torZustaende.getGESCHLOSSEN_ZUSTAND();
     }
 }

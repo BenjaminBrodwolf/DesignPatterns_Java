@@ -1,13 +1,10 @@
 package state_tor.v5;
 
-public  abstract class AbstrakterZustand implements Zustand {
+public abstract class AbstrakterZustand implements Zustand {
 
-    TorZustande torZustande;
+    static TorZustaende torZustaende = TorZustaende.getInstance();
 
-    protected AbstrakterZustand(){
-        if (null == torZustande){
-            torZustande = new TorZustande();
-        }
+    protected AbstrakterZustand() {
     }
 
     @Override
