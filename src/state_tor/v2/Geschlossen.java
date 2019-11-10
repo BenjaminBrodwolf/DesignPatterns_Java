@@ -9,12 +9,12 @@ public class Geschlossen extends AbstrakterZustand {
     @Override
     public void oeffnen() {
         System.out.println("Tor wird geöffnet");
-        TOR.setZustand(new Oeffen(TOR));
+        TOR.setOeffenZustand();
     }
 
     @Override
     public void abschliessen() {
-        System.out.println("Tor wird abgeschlossenn");
-        TOR.setZustand(new Abgeschlossen(TOR));
+        System.out.println("Tor wird abgeschlossen");
+        TOR.setAbgeschlossenZustand();
     }
 }

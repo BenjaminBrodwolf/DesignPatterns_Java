@@ -9,6 +9,6 @@ public class Oeffen extends AbstrakterZustand {
     @Override
     public void schliessen() {
         System.out.println("Tor wird geschlossen");
-        TOR.setZustand(new Geschlossen(TOR));
+        TOR.setGeschlossenZustand();
     }
 }
