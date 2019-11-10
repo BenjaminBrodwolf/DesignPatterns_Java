@@ -2,10 +2,7 @@ package state_tor.v4;
 
 public class Tor {
 
-    private final Zustand startZustande = new Offen();
-
-    private Zustand zustand = startZustande;
-
+    private Zustand zustand = TorZustaende.OFFEN_ZUSTAND;
 
     public void oeffnen() {
         this.zustand = zustand.oeffnen();

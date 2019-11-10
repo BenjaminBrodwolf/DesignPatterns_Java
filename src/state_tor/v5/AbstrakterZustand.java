@@ -4,7 +4,7 @@ public  abstract class AbstrakterZustand implements Zustand {
 
     TorZustande torZustande;
 
-    public AbstrakterZustand(){
+    protected AbstrakterZustand(){
         if (null == torZustande){
             torZustande = new TorZustande();
         }
