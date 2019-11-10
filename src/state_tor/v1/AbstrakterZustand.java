@@ -1,6 +1,6 @@
 package state_tor.v1;
 
-public class AbstrakterZustand implements Zustand {
+public abstract class AbstrakterZustand implements Zustand {
 
     public final Tor TOR;
 
