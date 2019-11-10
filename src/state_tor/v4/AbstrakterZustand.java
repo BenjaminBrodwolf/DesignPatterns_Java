@@ -1,10 +1,6 @@
-package state_tor.v3;
+package state_tor.v4;
 
 public  abstract class AbstrakterZustand implements Zustand {
-
-    protected final static Zustand OFFEN_ZUSTAND = new Offen();
-    protected final static Zustand GESCHLOSSEN_ZUSTAND = new Geschlossen();
-    protected final static Zustand ABGESCHLOSSEN_ZUSTAND = new Abgeschlossen();
 
     @Override
     public Zustand oeffnen() {
