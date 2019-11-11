@@ -1,7 +1,5 @@
 package composite.v1;
 
-import composite.V2.FHNW;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,7 +29,7 @@ public class AufgabenListe extends Aufgabe{
         return true;
     }
 
-    //rekursiver Aufruf auf alle Studenten und erhalte die Anzahl der Studierente in diesem Modul
+    //rekursiver Aufruf auf alle Aufgaben und erhalte die Anzahl der Aufgaben insgesamt
     @Override
     public int getAnzahlAufgaben() {
         int summe = 0;
