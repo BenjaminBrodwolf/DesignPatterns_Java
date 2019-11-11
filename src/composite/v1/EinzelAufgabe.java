@@ -18,4 +18,9 @@ public class EinzelAufgabe extends Aufgabe {
     public boolean istErledigt() {
         return erledigt;
     }
+
+    @Override
+    public int getAnzahlAufgaben() {
+        return 1;
+    }
 }

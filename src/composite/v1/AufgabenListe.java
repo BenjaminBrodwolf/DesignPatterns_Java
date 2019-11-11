@@ -1,5 +1,7 @@
 package composite.v1;
 
+import composite.V2.FHNW;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,7 +31,19 @@ public class AufgabenListe extends Aufgabe{
         return true;
     }
 
+    //rekursiver Aufruf auf alle Studenten und erhalte die Anzahl der Studierente in diesem Modul
+    @Override
+    public int getAnzahlAufgaben() {
+        int summe = 0;
+        for (Aufgabe aufgabe : aufgaben) {
+            summe += aufgabe.getAnzahlAufgaben();
+        }
+        return summe;
+    }
+
     public void hinzufuegen(Aufgabe aufgabe){
         aufgaben.add(aufgabe);
     }
+
+
 }
