@@ -6,10 +6,10 @@ public class NewsletterMain {
 
         Newsletter newsletter = new Newsletter();
 
-        newsletter.addSubscriber( source -> {
+        newsletter.addSub(source -> {
             System.out.println("\n------------------------");
             System.out.println("---> ich bin source: " + source);
-            source.addSubscriber(s -> System.out.println("-------> und bin INNER SOURCE " + s));
+            source.addSub(s -> System.out.println("-------> und bin INNER SOURCE " + s));
         });
 
         newsletter.setNewsText("Erste News");

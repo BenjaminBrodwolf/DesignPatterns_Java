@@ -39,9 +39,16 @@ public class AufgabenListe extends Aufgabe{
         return summe;
     }
 
-    public void hinzufuegen(Aufgabe aufgabe){
+    public void add(Aufgabe aufgabe){
         aufgaben.add(aufgabe);
     }
 
+    public void remove(Aufgabe aufgabe){
+        aufgaben.remove(aufgabe);
+    }
+
+    public Aufgabe getAufgabe(int index){
+        return aufgaben.get(index);
+    }
 
 }
