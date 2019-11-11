@@ -34,12 +34,6 @@ public class Modul extends FHNW {
         studenten.add(student);
     }
 
-    public void remove(FHNW student) {
-        studenten.remove(student);
-    }
 
-    public FHNW getStudent(int index) {
-        return studenten.get(index);
-    }
 
 }

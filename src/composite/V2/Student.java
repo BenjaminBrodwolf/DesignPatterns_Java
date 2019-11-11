@@ -17,5 +17,4 @@ public class Student extends FHNW {
         return 1;
     }
 
-    //ggf. Instanzvariablen und weitere Methoden...
 }
