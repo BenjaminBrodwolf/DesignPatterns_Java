@@ -1,4 +1,4 @@
-package composite.V2;
+package composite.v2;
 
 public class CompositeMitarbeiterDemo {
 
