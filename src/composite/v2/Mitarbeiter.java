@@ -1,4 +1,4 @@
-package composite.V2;
+package composite.v2;
 // Component
 public abstract class Mitarbeiter {
 
