@@ -3,26 +3,26 @@ package composite.v1;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AufgabenListe extends Aufgabe{
+public class AufgabenListe extends Aufgabe {
 
     private List<Aufgabe> aufgaben;
 
-    public AufgabenListe(String beschreibung){
+    public AufgabenListe(String beschreibung) {
         super(beschreibung);
         aufgaben = new ArrayList<>();
     }
 
     @Override
     public void wirdErledigt() {
-        for(Aufgabe aufgabe : aufgaben){
+        for (Aufgabe aufgabe : aufgaben) {
             aufgabe.wirdErledigt();
         }
     }
 
     @Override
     public boolean istErledigt() {
-        for(Aufgabe aufgabe : aufgaben){
-            if (!aufgabe.istErledigt()){
+        for (Aufgabe aufgabe : aufgaben) {
+            if (!aufgabe.istErledigt()) {
                 return false;
             }
         }
@@ -39,16 +39,25 @@ public class AufgabenListe extends Aufgabe{
         return summe;
     }
 
-    public void add(Aufgabe aufgabe){
+    public void add(Aufgabe aufgabe) {
         aufgaben.add(aufgabe);
     }
 
-    public void remove(Aufgabe aufgabe){
+    public void remove(Aufgabe aufgabe) {
         aufgaben.remove(aufgabe);
     }
 
-    public Aufgabe getAufgabe(int index){
-        return aufgaben.get(index);
+    public List<Aufgabe> getChildren() {
+        List<Aufgabe> children = new ArrayList<>();
+        for (Aufgabe aufgabe : aufgaben) {
+            if (aufgabe instanceof AufgabenListe){
+                AufgabenListe c = (AufgabenListe) aufgabe;
+                children.addAll(c.getChildren());
+            }else {
+                children.add(aufgabe);
+            }
+        }
+        return children;
     }
 
 }
