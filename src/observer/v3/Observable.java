@@ -7,12 +7,12 @@ public abstract class Observable {
 
     private List<Observer> observers = new CopyOnWriteArrayList<>();
 
-    public void addSubscriber(Observer subscriber) {
-        observers.add(subscriber);
+    public void addSub(Observer sub) {
+        observers.add(sub);
     }
 
-    public void removeListener(Observer subscriber) {
-        observers.remove(subscriber);
+    public void removeSub(Observer sub) {
+        observers.remove(sub);
     }
 
     public void notifyListeners() {
