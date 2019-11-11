@@ -14,4 +14,5 @@ public abstract class Aufgabe {
 
     public abstract void wirdErledigt();
     public abstract boolean istErledigt();
+    public abstract int getAnzahlAufgaben();
 }

@@ -29,7 +29,19 @@ public class AufgabenListe extends Aufgabe{
         return true;
     }
 
+    //rekursiver Aufruf auf alle Aufgaben und erhalte die Anzahl der Aufgaben insgesamt
+    @Override
+    public int getAnzahlAufgaben() {
+        int summe = 0;
+        for (Aufgabe aufgabe : aufgaben) {
+            summe += aufgabe.getAnzahlAufgaben();
+        }
+        return summe;
+    }
+
     public void hinzufuegen(Aufgabe aufgabe){
         aufgaben.add(aufgabe);
     }
+
+
 }
