@@ -6,7 +6,7 @@ public class ConsoleMessageObserver implements Observer {
     public void update(Observable obs) {
         Newsletter ns = (Newsletter) obs;
         String text = ns.getNewsText();
-        System.out.println("Newsletter wurde verschickt: " + text);
+        System.out.println("\nNewsletter wurde verschickt: " + text);
     }
 
 }

@@ -2,9 +2,9 @@ package state_tor.v5;
 
 public final class TorZustaende {
 
-    private final  Zustand OFFEN_ZUSTAND = new Offen();
-    private final  Zustand GESCHLOSSEN_ZUSTAND = new Geschlossen();
-    private final  Zustand ABGESCHLOSSEN_ZUSTAND = new Abgeschlossen();
+    private final Zustand OFFEN_ZUSTAND = new Offen();
+    private final Zustand GESCHLOSSEN_ZUSTAND = new Geschlossen();
+    private final Zustand ABGESCHLOSSEN_ZUSTAND = new Abgeschlossen();
 
     private static TorZustaende torZustaende;
 
