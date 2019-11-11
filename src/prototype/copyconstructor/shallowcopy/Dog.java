@@ -1,6 +1,6 @@
 package prototype.copyconstructor.shallowcopy;
 
-public class Dog implements Cloneable {
+public class Dog {
     private String name;
     private int age;
     private Person owner;
