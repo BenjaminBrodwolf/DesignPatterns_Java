@@ -14,6 +14,6 @@ public class SoundSystem extends SpecialEquipment {
 
     @Override
     public String getDescription() {
-        return BASIS_Car.getDescription() + " und Soundsystem";
+        return BASIS_Car.getDescription() + " and a sound-system";
     }
 }

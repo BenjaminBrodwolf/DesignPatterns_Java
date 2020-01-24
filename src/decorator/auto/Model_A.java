@@ -9,6 +9,6 @@ public class Model_A implements Car {
 
     @Override
     public String getDescription() {
-        return "Ein Wagen der Luxusklasse";
+        return "A luxury car";
     }
 }

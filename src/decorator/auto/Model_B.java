@@ -9,6 +9,6 @@ public class Model_B implements Car {
 
     @Override
     public String getDescription() {
-        return "Ein Wagen der Mittelklasse";
+        return "A middle class car";
     }
 }
