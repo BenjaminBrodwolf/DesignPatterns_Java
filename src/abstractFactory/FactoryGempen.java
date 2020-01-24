@@ -1,4 +1,4 @@
-package factory;
+package abstractFactory;
 
 public class FactoryGempen implements AbstractFactory {
 
