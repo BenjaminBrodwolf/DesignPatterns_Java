@@ -1,5 +1,6 @@
 package composite.standart;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,8 +27,13 @@ public class Composite extends Component {
         childComponents.remove(comp);
     }
 
-    public Component getChild(int index) {
-        return childComponents.get(index);
+    @Override
+    public List<Component> getChildren() {
+        List<Component> children = new ArrayList<>();
+        for (Component c : childComponents) {
+            children.addAll(c.getChildren());
+        }
+        return children;
     }
 
 }
