@@ -1,4 +1,4 @@
-package command;
+package command.v1;
 
 public class Light {
     private boolean status; //Light status: True equals ON, False equals OFF

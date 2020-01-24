@@ -1,4 +1,4 @@
-package command;
+package command.v1;
 
 public class LightOnCommand implements Command {
     private Light light;

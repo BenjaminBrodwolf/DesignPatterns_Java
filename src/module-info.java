@@ -5,5 +5,5 @@ module depa.hogwarts {
     requires java.sql;
 
 
-    opens command;
+    opens command.v1;
 }

@@ -1,4 +1,4 @@
-package command;
+package command.v1;
 
 public class GarageGate {
     private boolean garageGate;     //Status of garage gate: True equals open, False equals closed
