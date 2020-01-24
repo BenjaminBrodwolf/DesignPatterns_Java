@@ -1,17 +1,16 @@
 package dependencyInjection;
 
+import dependencyInjection.digTools.Excavator;
+import dependencyInjection.digTools.Shovel;
+
 public class testDI {
 
     public static void main(String[] args) {
 
         Master master = new Master();
-        master.commando(new Shovel());
+        master.commandoToDig(new Shovel());
 
-
-        master.commando(new Excavator());
-
-
-
+        master.commandoToDig(new Excavator());
     }
 
 
