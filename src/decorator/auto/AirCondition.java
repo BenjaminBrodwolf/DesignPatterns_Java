@@ -13,6 +13,6 @@ public class AirCondition extends SpecialEquipment {
 
     @Override
     public String getDescription() {
-        return BASIS_Car.getDescription() + " und Klimaanlage";
+        return BASIS_Car.getDescription() + " and air condition";
     }
 }

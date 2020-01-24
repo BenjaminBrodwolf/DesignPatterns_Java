@@ -1,5 +1,8 @@
 package composite.standart;
 
+import java.util.Collection;
+import java.util.List;
+
 public abstract class Component {
     //gemeinsame Methode
     public abstract void operation();
@@ -14,7 +17,7 @@ public abstract class Component {
         //Leere Defaultimplementierung.
     }
 
-    public Component getChild(int index){
+    public List<Component> getChildren(){
         //Leere Defaultimplementierung.
         return null;
     }

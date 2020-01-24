@@ -4,17 +4,16 @@ public class Main {
     public static void main(String[] args) {
 
         Car basicCarModelA = new Model_A();
-        Car airCondition = new AirCondition(basicCarModelA);
-        Car modelAWithSoundAndAirCon = new SoundSystem(airCondition);
+        Car carWithAirCondition = new AirCondition(basicCarModelA);
+        Car modelAWithSoundAndAirCon = new SoundSystem(carWithAirCondition);
 
-        System.out.println("Kundenwunsch: " + modelAWithSoundAndAirCon.getDescription()
-                + " Preis: " + modelAWithSoundAndAirCon.getPrice());
+        System.out.println("car: " + modelAWithSoundAndAirCon.getDescription()
+                + " price: " + modelAWithSoundAndAirCon.getPrice());
 
+        Car carExample = new Model_B();
+        carExample = new SoundSystem(carExample);
 
-        Car basicCarModelB = new Model_B();
-        Car modelBWithSoundSystem = new SoundSystem(basicCarModelB);
-
-        System.out.println("Kundenwunsch: " + modelBWithSoundSystem.getDescription()
-                + " Preis: " + modelBWithSoundSystem.getPrice());
+        System.out.println("car: " + carExample.getDescription()
+                + " price: " + carExample.getPrice());
     }
 }
