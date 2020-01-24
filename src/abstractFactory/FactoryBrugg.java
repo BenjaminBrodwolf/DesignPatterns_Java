@@ -1,4 +1,4 @@
-package factory;
+package abstractFactory;
 
 public class FactoryBrugg implements AbstractFactory {
 
