@@ -18,24 +18,5 @@ public class CommandMain {
         remote.setCommand(gateOpen);
         remote.buttonPressed();
         System.out.println(garageGate.getState());
-        //launch(args);
     }
-
-//    @Override
-//    public void start(Stage stage) throws Exception {
-//        EventHandler<ActionEvent> event = new EventHandler<ActionEvent>() {
-//            public void handle(ActionEvent e)
-//            {
-//                l.setText("button selected    ");
-//            }
-//        };
-//
-//        Label label = new Label("Hello World");
-//        Button on1 = new Button("Licht an");
-//        on1.setOnAction();
-//        label.setAlignment(Pos.CENTER);
-//        stage.setScene(new Scene(label, 300, 250));
-//        stage.setTitle("Hello World Application");
-//        stage.show();
-//    }
 }
