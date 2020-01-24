@@ -23,9 +23,10 @@ public class KompositumDemo {
 //        iot.wirdErledigt();
 //        anzeigen("Fertig?", studium);
 //
-//        System.out.println("Aufgaben insgesamt: " + studium.getAnzahlAufgaben());
+        System.out.println("Aufgaben insgesamt: " + studium.getAnzahlAufgaben());
 
        studium.getChildren().forEach(aufgabe -> System.out.println(aufgabe.getBeschreibung()));
+
     }
 
     private static void anzeigen(String text, Aufgabe aufgabe){
