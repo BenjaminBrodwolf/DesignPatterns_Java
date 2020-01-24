@@ -1,6 +1,7 @@
 package decorator.auto;
 
-public class Model_B implements Component {
+// concrete component
+public class Model_B implements Car {
     @Override
     public int getPrice() {
         return 40_000;

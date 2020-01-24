@@ -1,6 +1,7 @@
 package decorator.auto;
 
-public interface Component {
+// component
+public interface Car {
     int getPrice();
     String getDescription();
 }

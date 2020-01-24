@@ -1,17 +1,18 @@
 package decorator.auto;
 
+// concrete decorator
 public class AirCondition extends SpecialEquipment {
-    public AirCondition(Component component) {
-        super(component);
+    public AirCondition(Car car) {
+        super(car);
     }
 
     @Override
     public int getPrice() {
-        return BASIS_COMPONENT.getPrice() + 8_000;
+        return BASIS_Car.getPrice() + 8_000;
     }
 
     @Override
     public String getDescription() {
-        return BASIS_COMPONENT.getDescription() + " und Klimaanlage";
+        return BASIS_Car.getDescription() + " und Klimaanlage";
     }
 }

@@ -1,9 +1,10 @@
 package decorator.auto;
 
-public abstract class SpecialEquipment implements Component {
-    protected final Component BASIS_COMPONENT;
+// decorator
+public abstract class SpecialEquipment implements Car {
+    protected final Car BASIS_Car;
 
-    protected SpecialEquipment(Component component) {
-        this.BASIS_COMPONENT = component;
+    protected SpecialEquipment(Car car) {
+        this.BASIS_Car = car;
     }
 }
