@@ -1,4 +1,4 @@
-package factory_method.v2_factory_method;
+package factory_method.v2_factory;
 
 public class Car extends Vehicle {
 

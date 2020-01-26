@@ -1,18 +1,16 @@
-package factory_method.v2_factory_method;
+package factory_method.v1_static_factory;
 
 public class Main {
     public static void main(String[] args) {
 
-        //must create VehicleFactory to use later
-        VehicleFactory vf = new VehicleFactory();
-
+        //can directly use VehicleFactory.createVehicle() method since it is static
         //create Car and print type and speed
-        Vehicle car = vf.createVehicle("car");
+        Vehicle car = VehicleFactory.createVehicle("car");
         car.setSpeed(100);
         car.print();
 
         //create Motorcycle and print type and speed
-        Vehicle motorcycle = vf.createVehicle("motorcycle");
+        Vehicle motorcycle = VehicleFactory.createVehicle("motorcycle");
         motorcycle.setSpeed(80);
         motorcycle.print();
 

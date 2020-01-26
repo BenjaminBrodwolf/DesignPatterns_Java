@@ -1,7 +1,7 @@
-package factory_method.v2_factory_method;
+package factory_method.v1_static_factory;
 
 public class VehicleFactory {
-    public Vehicle createVehicle(String vehicleType) {
+    public static Vehicle createVehicle(String vehicleType) {
         if (vehicleType == null) { return null; }
         if (vehicleType.equalsIgnoreCase("car")) {
             return new Car();
