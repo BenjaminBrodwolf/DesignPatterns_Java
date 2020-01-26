@@ -8,3 +8,4 @@ public class Leaf extends Component {
 
     //ggf. Instanzvariablen und weitere Methoden...
 }
+

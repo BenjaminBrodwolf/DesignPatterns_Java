@@ -16,7 +16,6 @@ public abstract class AbstrakteZustand implements Zustand{
     @Override
     public void kussGeben() {
         throw new IllegalStateException();
-
     }
 
     @Override

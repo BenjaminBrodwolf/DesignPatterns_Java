@@ -2,15 +2,15 @@ package abstractFactory;
 
 public class FactoryBrugg implements AbstractFactory {
 
-    public Main.Eatables createEatable(){
-        return new Main.Bread();
+    public Eatables createEatable(){
+        return new Bread();
     }
 
-    public Main.Clothes createClothes(){
-        return new Main.Shirt();
+    public Clothes createClothes(){
+        return new Shirt();
     }
 
-    public Main.Cosmetics createCosmetics(){
-        return new Main.Perfume();
+    public Cosmetics createCosmetics(){
+        return new Perfume();
     }
 }

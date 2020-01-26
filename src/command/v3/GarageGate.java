@@ -1,8 +1,8 @@
 package command.v3;
 
 public class GarageGate {
-    private boolean garageGate;     //Status of garage gate: True equals open, False equals closed
-    private Light light;
+    private boolean garageGate;  //Status of garage gate:
+    private Light light;   //True equals open, False equals closed
 
     public GarageGate(boolean status, Light light){
         this.garageGate = status;

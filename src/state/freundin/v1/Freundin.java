@@ -25,5 +25,4 @@ public class Freundin{
     public void verärgern() {
         aktuellerZustand.verärgern();
     }
-
 }

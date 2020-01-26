@@ -14,5 +14,4 @@ public class Subscriber implements Observer {
         String text = ns.getNewsText();
         System.out.println(name + " erhält: " + text);
     }
-
 }

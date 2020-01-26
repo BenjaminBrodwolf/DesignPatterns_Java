@@ -9,13 +9,13 @@ public class SortMainTester {
 
         Context context = new Context();
 
-        context.setSortStrategy(merge);
+        context.setSortStrategy(new MergeSort());
         context.sort(null);
 
-        context.setSortStrategy(heap);
+        context.setSortStrategy(new QuickSort());
         context.sort(null);
 
-        context.setSortStrategy(quick);
+        context.setSortStrategy(new HeapSort());
         context.sort(null);
 
     }

@@ -1,8 +1,8 @@
 package command.v3;
 
 public class Light {
-    private boolean status; //Light status: True equals ON, False equals OFF
-
+    private boolean status; //Light status:
+                        // True equals ON, False equals OFF
     public Light(boolean state){
         this.status = state;
     }
@@ -13,11 +13,8 @@ public class Light {
 
     public String getStatusAsString(){
         String result;
-        if(status){
-            result = "Light is on";
-        } else {
-            result = "Light is off";
-        }
+        if(status){  result = "Light is on";
+        } else {     result = "Light is off";  }
         return result;
     }
 

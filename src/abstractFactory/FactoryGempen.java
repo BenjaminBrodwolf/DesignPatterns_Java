@@ -2,16 +2,16 @@ package abstractFactory;
 
 public class FactoryGempen implements AbstractFactory {
 
-    public Main.Eatables createEatable(){
-        return new Main.Cheese();
+    public Eatables createEatable(){
+        return new Cheese();
     }
 
-    public Main.Clothes createClothes(){
-        return new Main.Pullover();
+    public Clothes createClothes(){
+        return new Pullover();
     }
 
-    public Main.Cosmetics createCosmetics(){
-        return new Main.Lipstick();
+    public Cosmetics createCosmetics(){
+        return new Lipstick();
     }
 
 }

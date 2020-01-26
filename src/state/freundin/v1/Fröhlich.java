@@ -19,4 +19,7 @@ public class Fröhlich implements Zustand {
         System.out.println("Du spinnst wohl! ;-(");
         freundin.setAktuellerZustand(new Bockig(freundin)); //Zustandsübergang
     }
+
+
 }
+

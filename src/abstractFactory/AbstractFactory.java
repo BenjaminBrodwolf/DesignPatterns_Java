@@ -2,9 +2,9 @@ package abstractFactory;
 
 public interface AbstractFactory {
 
-    public Main.Eatables createEatable();
+    public Eatables createEatable();
 
-    public Main.Clothes createClothes();
+    public Clothes createClothes();
 
-    public Main.Cosmetics createCosmetics();
+    public Cosmetics createCosmetics();
 }
