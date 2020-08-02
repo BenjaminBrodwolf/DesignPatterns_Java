@@ -1,1 +1,1 @@
-# depa_hogwarts
+# Design Patterns examples for Java
